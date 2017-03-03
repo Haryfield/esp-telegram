@@ -107,7 +107,8 @@ void loop()
 		// If any other person as the admin sends something to your bot, let them know they are not allowed to do so.
 		else 
 		{
-			bot.sendMessage(bot.message[i][4], "Access denied.", "");
+			String senderID = bot.message[i][4];
+			bot.sendMessage(bot.message[i][4], "Access denied. Your ID: " + senderID, "");
 		}
 	}
 	bot.message[0][0] = "";
