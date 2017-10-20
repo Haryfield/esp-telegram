@@ -44,7 +44,7 @@ void setup()
 	}
 
 	Serial.println("\n\nWiFi connected.");  
-	Serial.print("  IP address: " + String(WiFi.localIP()) + "\n");
+	Serial.print("  IP address: " + WiFi.localIP().toString() + "\n");
 	Serial.print("  Host name:  " + String(hostname) + "\n");
 	Serial.print("- - - - - - - - - - - - - - - - - - -\n\n");
 	delay(3000);
